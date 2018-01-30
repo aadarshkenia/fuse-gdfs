@@ -1,0 +1,8 @@
+#Mounting the FUSE filesystem
+From inside example directory
+
+../src/bbfs rootdir/ mountdir/
+
+
+#Unmounting the file system
+fusermount -u mountdir

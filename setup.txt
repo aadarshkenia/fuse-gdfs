@@ -1,0 +1,11 @@
+1. Install fusepy.
+2. Run the example program as:
+python memory.py <mountpoint>
+
+3. Download python client lib from google:  https://pypi.python.org/pypi/google-api-python-client/
+	Install it as follows: 'python setup.py install'
+
+
+3. Open another terminal and cd into the mount point directory. You should start seeing logs as you play around in the mound point.
+
+

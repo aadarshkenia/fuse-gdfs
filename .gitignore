@@ -1,4 +1,5 @@
+lib/
+mnt/
 *.sh
 *.tgz
-*.m4
 Makefile.in

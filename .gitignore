@@ -4,3 +4,4 @@ mnt/
 *.sh
 *.tgz
 Makefile.in
+*.log

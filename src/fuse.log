@@ -1,0 +1,24 @@
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+DEBUG:root:GDrive configuration initialized to: None
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+DEBUG:root:GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-10 19:11:36,878 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-10 19:11:36,879 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-10 19:11:37,075 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}

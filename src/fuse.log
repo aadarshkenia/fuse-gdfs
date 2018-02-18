@@ -32,3 +32,365 @@ Traceback (most recent call last):
   File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
 ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
 2018-02-10 20:26:46,268 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 17:40:41,802 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 17:40:41,870 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 17:40:41,871 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 17:40:42,089 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?alt=json
+2018-02-11 17:40:42,089 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 17:40:42,135 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTgzOTI0NDIsImlhdCI6MTUxODM4ODg0Mn0', 'c4NLB_WljbVEUkg-BTplIScnPzJfdYU-T02JkVdzeqGwamBw7gWk6hbnJvX4YR6QRQaNFAtzhBzObdJXMlhO0u63WtClT2gNPk0vdZq09Ux4ZVW2cId6p1Jl0xYZfyfAvQMCuCgZcT3gYnzAvA9jPzOzVhPYcFYuA7zcKDFHpCOGCmuWAkK4FchlUOzntf0ANA9Q1wMMpd0XP1-5nrz_T3sDHYIPremUcw7yY-mn9u17SYQP2O34-4hZweIqSdz05K-7Ja-0g2QPxPZDaOFnMMxWz9RL7ZD2T8ZsH3CCz84vBjmDBs6mxI0QxTpSASmMfwTOEQ-0FjJb3koqQ7xBAA']
+2018-02-11 17:40:42,135 MainThread INFO Refreshing access_token
+2018-02-11 17:41:36,379 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 17:41:36,382 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 17:41:36,382 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 17:41:36,555 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?alt=json
+2018-02-11 17:41:36,555 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 17:41:36,596 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTgzOTI0OTYsImlhdCI6MTUxODM4ODg5Nn0', 'HLMn1Dkp7GUclt1uVrK3HOnJkSY4XIOlgmwYEnUteHRsnx3gJlbDESAxEWE-L9Lcdz7_kmuUxvQVSCmhrKamB3-EnTSh32SOHsVY6zuhnn3t1a2DQVJ_K9VVMBJNs_vuat18GM0DQpsQuDaCxwqC-oCPsGOBCboPUqPkZTL2PnxsUqPJ3c5taFWPmdHk0YlxQVxv_Ukbl_o6QZdQQHz1bMroC4osfGvjQiQ0rM50ttMzeb7YodFF7IAaiRPpzcHGWbmc3oYzBDf16y0fsFvq2-jFBu7EKh_8FYmREbZ8o1ixDkhycB-whwwfreAmGqnjWvjJ_6yGeGgy4epVf5ujHA']
+2018-02-11 17:41:36,596 MainThread INFO Refreshing access_token
+2018-02-11 17:51:21,537 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 17:51:21,539 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 17:51:21,539 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 17:51:21,701 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?alt=json
+2018-02-11 17:51:21,702 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 17:51:21,742 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTgzOTMwODEsImlhdCI6MTUxODM4OTQ4MX0', 'TdbS5zHohxr9poJKCIadHo4_fbYdb-R1lfjuMUTTePfT7ZIxqFhND_lQAxHB8CaIT_wpN8ak5ABRE7jXw7C1RlSfNJnLMS6qo4UMfeorYzemibCli1tycTfHCxH7_GNLvx0XMPhUJgro728EivmgSF2JzWwnBf8LJCw-mj1oLFI4h3GU8bV49Pq77ReHft1cybZiDGNJhjQPw62cpW0Pg2CVHG5Cyu4s-aoWOdWfU-70Do55XD4aWkc6hAORbXAkZAc9jvdVyyRSsdbubOwFG2H0QCQ09Ij9njQVwma3JfSpel20Uhnmh_5Nk52-FfPkx6YZz-VYuRp_8RiODI69Uw']
+2018-02-11 17:51:21,742 MainThread INFO Refreshing access_token
+2018-02-11 18:40:18,916 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 18:40:18,932 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 18:40:18,933 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 18:40:40,630 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 18:40:40,632 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 18:40:40,632 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 18:40:53,185 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 18:40:53,188 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 18:40:53,188 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 18:40:59,116 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 18:40:59,118 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 18:40:59,118 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:00:44,241 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:00:44,298 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:00:44,299 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:00:52,266 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:00:52,268 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:00:52,268 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:01:14,257 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:01:14,261 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:01:14,261 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:05:22,425 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:05:22,427 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:05:22,427 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:06:50,462 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:06:50,464 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:06:50,465 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:07:10,228 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:07:10,231 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:07:10,231 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:07:10,391 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?alt=json
+2018-02-11 19:07:10,392 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 19:07:10,432 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTgzOTc2MzAsImlhdCI6MTUxODM5NDAzMH0', 'ndDqPphM6unel8JINq7gIhMqNY9TfSNStnyBHtiShp_LWeySKssSDjwFiJ6N6_eq3quaiR4PxvtmYuViloVxfyQ1ia66OzxumEtTahnGuFaCb0A9Fn56G72MgpUJM9RtuRBFFSkiEwDxPYYWNbTpDtVi8MjuvnTEVF_Qk8hsojcPN4oK-ijDip0ayYEY3NIkxwj5JlfBy6qQS_ntrhKMbCXTO4-2N8Wx4scuBOPYs5kwV1H9MdZPMjqXWGOP-isn8jalwAVB8yCcmVDSnUxjO5nnTftqA9SBDmVXZCb1fO_ZT3btkKXcveui9OwKwXxgc2S6jBe9QgXnpP1GLyqGCQ']
+2018-02-11 19:07:10,432 MainThread INFO Refreshing access_token
+2018-02-11 19:07:54,338 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:07:54,340 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:07:54,341 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:07:54,559 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?alt=json
+2018-02-11 19:07:54,559 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 19:07:54,601 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTgzOTc2NzQsImlhdCI6MTUxODM5NDA3NH0', 'UvVcZM60mbZsg2xj7xI_8e_o_OI7V5e_sBhu38LQIanq9GyKF0OherwcpdiymGx0T568OsahwGxax3UeYJw8LINg4pDlSpl5itV9I9MTuiJzgag-nNoLBrfBgkzdR8R1Mr1QmZ317kCy6Xpw9Gu53jMOzUW_XMy75NSJCxtvayytVKPVTuM3uzuWQZ-ibnLyKHkqPO9wma2ordi6M_D-qPaD1tqj7rmmmQruLRCbeC4Dm4z-BI8EIW3-WjIHtm0_87kIzeonR8BD9PUWx0p2Qnt2MpZpSKxkDWA8ttsfHDqASbsTA8gaQ5nZgLyzQ4HJdGP9Wb6tMCZaz7VcCnFAPQ']
+2018-02-11 19:07:54,601 MainThread INFO Refreshing access_token
+2018-02-11 19:08:21,897 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:08:21,903 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:08:21,905 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:08:38,668 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?alt=json
+2018-02-11 19:08:38,669 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 19:08:38,726 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTgzOTc3MTgsImlhdCI6MTUxODM5NDExOH0', 'c6WzW8oY2orqP82QEq6Wiwc_aflsnABRPOQKIDus7oFWIpgxkj4NT2XN_kJADmA-DpjJ7CwR8LiYkxUjlKPJQLVpMDQkpXjZpqeFglEVNuLCNr6LGspoc9dH73dcmTiDnD0v6XD9cyvvg1beAH2FxbOEZKkKGhRgzTunCpl6nwJRl9B86TatLyGqW91acsP0Val4lUj92XRgpvtHGmdBb5HfdgEB9DXG3tzwvH9akbM0svsKW2GsSGc5j5Mo_Z2nro-4aWK_9A4Fp7JuTpLX2H2q4AJAIAdZcy7bg_MGo1GMmMyMAKO3440-YlNXI5bhCbQ-Gyje5ZUa9P1DilLaTg']
+2018-02-11 19:08:38,726 MainThread INFO Refreshing access_token
+2018-02-11 19:09:24,079 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:09:24,089 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:09:24,090 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:11:24,128 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?alt=json
+2018-02-11 19:14:10,658 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 19:14:10,704 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTgzOTgwNTAsImlhdCI6MTUxODM5NDQ1MH0', 'K2FPOfrPaaNIxI_5gmxQzq5silCoMBfl8PofffkTeYUStTHwEWS26-Ld6Ufl31Ahj3sJgH-_Kb7hqhEIuIO7bZeLBn7lAVgMSK_NzU1vHPhy3PrlIVh4LmrT0lPUVIJhdE7U58Z7Io7odtZM8cYimnnI07gocia7qlECEquzExH0Zyjk-WB-qAZGT5KHmnmgp-VT6XGqhjDqbv0NuihoTPLgyVH4NyaFDXDodArdpg4r_mWmGFyeOWqVf9zQdvYxsnLladEbzQjQHg4bwA6FPs1o6L_mRURj-IAbmy-Pv00pQJXXXLxzQmPHA5iKMkWBU0IsoeEgI6kYWfcbCk3IhQ']
+2018-02-11 19:14:10,705 MainThread INFO Refreshing access_token
+2018-02-11 19:39:20,019 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:39:20,065 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:39:20,066 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:41:08,225 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:41:08,227 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:41:08,227 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:41:32,796 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:41:32,798 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:41:32,799 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:42:50,935 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:42:50,937 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:42:50,937 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:43:00,213 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:43:00,216 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:43:00,216 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:43:29,778 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:43:29,783 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:43:29,784 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:52:19,391 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:52:19,402 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:52:19,403 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:52:19,589 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%271AkcjiD5PgBxz8YU3CbX3Ee005iDzEglI%27+in+parents&alt=json
+2018-02-11 19:52:19,589 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 19:52:19,631 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTg0MDAzMzksImlhdCI6MTUxODM5NjczOX0', 'FcGbOKdEDzi17AZ4TfWWHcQJcqzDF6frHi_1NYBg0Y3dJDKEumc8UHv9XVGB6BeOm6M4yiYse1jQGLGcm4p135ILL82FCVurX-_M_WUKrjzUMXDnZCOD9xVCcP3YrgTGK9O7VtsDXDY4mYA4LCKXWI_QCdM7rMYVBp4y0ddJcUMbn-824t1eip1tv8-Vs5YygafPdPr7Zjiy9oRdL3Ienl4nHt0xiiqJD0ABnzjsKkAzFZr4kRuA6805fh8J0hJQ48or6bBKg6VVm6gqHFlVNmSM3dN9Wr47GTxCLFW4-ALEAsWFJYTgKBrbVrqcBqN8YWbadxLIXS6WRQ87aUF54Q']
+2018-02-11 19:52:19,631 MainThread INFO Refreshing access_token
+2018-02-11 19:52:30,449 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-11 19:52:30,451 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-11 19:52:30,452 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-11 19:52:30,618 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%27root%27+in+parents&alt=json
+2018-02-11 19:52:30,618 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-11 19:52:30,660 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTg0MDAzNTAsImlhdCI6MTUxODM5Njc1MH0', 'Hc-nXgZwuuSeiRYwvwhotM0mfRvSwBJexE7TGudWhij9zgylG3vnfuTog8_5muV3jWjh9qIzpxO5SYwJNMKNuiyWmlfc-j6K2t8eHql8LlNM36F_BCv1lDv5Y_yXHFH2EeEUJZ60er8Xe_XbP4QSl-l_4kU6KQSD1l2SEOmYSY1MygHO2a19LblMA1s2hFKuZALNsrETiCxx3bgTLcK4Ezl9ihat4ECBnovU-_IP2_44ICRKY3ZITqO5EcBsow9EJ_L9K5Z3lJ0xGG3vTOwQX4mNSKtcl7s92rd8No4OC6eywahdI1Tv-Bsh-CVYcgngXl4MECJEdKQEX6_pHJrj6A']
+2018-02-11 19:52:30,660 MainThread INFO Refreshing access_token
+2018-02-18 18:36:11,759 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:36:11,827 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:36:11,827 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:36:12,036 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%27root%27+in+parents&alt=json
+2018-02-18 18:36:12,036 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:36:12,082 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDA1NzIsImlhdCI6MTUxODk5Njk3Mn0', 'IrLeujmhV_5ZKvicw4h3a1-aPT9yvfn6OiN5BYwBLaEK4R7Diq8i_S1JnLBn2KtMAXPdKxs6HqLF3jzdjkN4FX-ODyAAkFCDzHLh_UShW1lbkWB_x4ug4eexoazZTn7hdSJ9KDWoGP4jQFK4U28-kib8emgezqJUH7w2s3z7Bylg2jhkYmxFVhNMu0GZHqTX1yolS-JCKaNrBmRKcfOqE3f0EovJ505vxsjqAS0dCqL6eBT19eAayM25fM7Q-J_K_SjAa64P0YSppgU4XJUqHSbji97XwnfasDmUHhbJ460Xyrf-ElcwCkrCkI0se8XL8QTbGhb6TT1IYZSexMIERg']
+2018-02-18 18:36:12,083 MainThread INFO Refreshing access_token
+2018-02-18 18:36:36,574 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:36:36,576 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:36:36,577 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:36:36,687 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%27root%27+in+parents&alt=json
+2018-02-18 18:36:36,687 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:36:36,728 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDA1OTYsImlhdCI6MTUxODk5Njk5Nn0', 'g1JAqUUFsH0qdJ2tL9J4fwKzI6u0s9SNoXk0JVdhOU9UKNEN3A0NZUj6hmacWotF2aztMqeNRyI0dp8bYz8_lOfBun_s5LvmY2XI9bNpMIJd1EIg7Rk4zGsHvwfpELe-vAvimD4glJrLhGeGYWwztDA4H6bUmpHB7yjbARACgGb15XNNETv_k6q2XuEVKu7jm_CDxvzmRrQWkDFJ4evTcR53FYAtoGVivKz_We5Yri2UIeIRKI9pF5WyUXf2zrjEG2G3nN_XZDRIcPxuepDKOt2HTEoD_On1ZHGesF9qQhVcvzAjvMep6awdWEND8jVw3k8IT1rG6hdBEHooSRkRmA']
+2018-02-18 18:36:36,728 MainThread INFO Refreshing access_token
+2018-02-18 18:36:51,056 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:36:51,058 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:36:51,058 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:36:51,314 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%27root%27+in+parents&alt=json
+2018-02-18 18:36:51,314 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:36:51,354 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDA2MTEsImlhdCI6MTUxODk5NzAxMX0', 'jbCGyZtStdav4oU8yACse5c-tvLCERrWy0WVqa88IQl-HBLia1mgP9rPitLBqXRwsSJDTsYqJVo_cDnBdl6xoYgE9IVMnegH-aamEnFLINCrQ_PTtoEUogzqBTVCpu2IfYCCbzg3eT2qVbuGi0FIM7xpeXkMper5xvhWHYF1ZUzWhHCeB9UW3SmloS0UtbR9A1vzRRXTfboSlxg6RaZt1oeiUS4yWV6MDfBy3F-LRygwshAm7Het0F98AVPh1_b1w_yEJmFVjuJ-IcenhsAWf07dc3a_LCwjqeGRGNM97uLksvDp2IggMQ2t3sOmnMJblfc8fumDEZHFbhWG01YI5w']
+2018-02-18 18:36:51,354 MainThread INFO Refreshing access_token
+2018-02-18 18:38:20,782 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:38:20,785 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:38:20,785 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:38:20,906 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=1AkcjiD5PgBxz8YU3CbX3Ee005iDzEglI+in+parents&alt=json
+2018-02-18 18:38:20,906 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:38:20,956 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDA3MDAsImlhdCI6MTUxODk5NzEwMH0', 'qZ90uS9HljA8tLj3OiPGyd_ouXSuVxziA9AQ1OJbGbZ2h-Pb-_9unjOuhepnm-Cyq1j-U35Yz7BJbvbAWZpKATFBMeqBNm6aD-tn9SxUhshhGTICzAbTY5W9KS2E7na3GhCtHehcZ9-_1fPWxciAg6qr-jUQzYb-Kqag0WWTS4kXiFwy2eqon7D8VCPdWa_98iENrNfbwUAFyaJ0OARmPmyJZ8vhCHCo87Pu-63n-zcStxcdRs2DbGgL6pROFmF7YlSgmJHO5pXdsPfFsJeyFf4ae5KbPvPgH5LYItAp04wR-MKXoMBNkM7y8cVFCcMXfks83j0GxWpdufqh4JboAw']
+2018-02-18 18:38:20,957 MainThread INFO Refreshing access_token
+2018-02-18 18:38:38,192 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:38:38,194 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:38:38,194 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:38:38,344 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=root+in+parents&alt=json
+2018-02-18 18:38:38,344 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:38:38,385 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDA3MTgsImlhdCI6MTUxODk5NzExOH0', 'DmWJJLj66wYYky-fO-01tbgeMv1dEHqKbm-O0OOv6plDnYzCPbLUlIb3WA6zfWh8TAh1qzGNLx1KKPJlX6GiPXoHz426GVBke2gKbWUwfhW3fvxi8vmjWGnBaBkuwRLvVOGgqarF2P3vZFXfXdElvq5owlFtln4CVBVHlH2amAoCGbVEcrVa1MzrDkyojduVodAWA3krFErVcAZUUWe6wLtchSirC8FY8JH-DYp44oiozCldrqKc0Y_oOKbp4dwLdzkPnnKVOx8CZKgv1uUcRBdhc_ZnMyAr8MgQEoef-gQq4Qt6mHLJCK7kjNkJbiSKIDEtyX8STHloj29jvyP9oA']
+2018-02-18 18:38:38,385 MainThread INFO Refreshing access_token
+2018-02-18 18:42:51,837 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:42:51,839 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:42:51,839 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:42:52,034 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%27root%27+in+parents&alt=json
+2018-02-18 18:42:52,034 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:42:52,074 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDA5NzIsImlhdCI6MTUxODk5NzM3Mn0', 'bNy3sdi3XnnLayN3HxwcjOJ22xFDOMw3QfyI3h9xGz-HVlw2NNXYDb3a0G0SF3K3XhCe_OV88MAUK-Ozx7wchiF9YovP6h_dsxq7UOA-WsbsK129aT8qgPBXPScWmQ-FQpCuviaZnlEclebVuXo8v38vztIvPPP2K-88WjRbrr16isotaP1quNlhJonxDeuKMDMpetjR6ShcyMSUukEQE1_Z7soluLa9HZI3G7qrpp8kNTJPzVbJBroEcTP2n4npoUa8X76IHpv4_NPm-HNewpEf2kME_7jCSKZT6x2rEcNbUPERq6oBj5bMhwJ3E5GJDlglqAedJp1J7l1Erxzgsw']
+2018-02-18 18:42:52,074 MainThread INFO Refreshing access_token
+2018-02-18 18:43:38,496 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:43:38,498 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:43:38,499 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:43:38,617 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%27root%27+in+parents&alt=json
+2018-02-18 18:43:38,617 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:43:38,658 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDEwMTgsImlhdCI6MTUxODk5NzQxOH0', 'q7g5vM0qB06udNoMJUQYifbwM6i_OyFjoGJeI7pmeWpd0xgVqH4KyDtdmucMfN1Rj4yc9Kudyg9Etch9WzZE_KIgFzaIvj8wi5R6RYse5k5YLZVV0tUmDKo0k8i9ITsR8U5j0kCKvNAMSzdyU9O1w2UQi5ACwb4nSuZCcBFblLGzakEOeYI_qxGtAYAwC-kcxfs7vWPhqMDysUTgobO-xtYosVi9xvqq4U7ebu-j2Gdp3NJf0kd1pCdMObvGdPwhQT6RUVAdAmWfwoDM1o4Bogyl9Ii4724_q8MIklcmY3LY6M7thAVZiZJAbbmqiWP9nRBn0TMRoK5h7YSl9EpzPQ']
+2018-02-18 18:43:38,658 MainThread INFO Refreshing access_token
+2018-02-18 18:43:55,206 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:43:55,208 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:43:55,209 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:43:55,312 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%271AkcjiD5PgBxz8YU3CbX3Ee005iDzEglI%27+in+parents&alt=json
+2018-02-18 18:43:55,312 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:43:55,355 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDEwMzUsImlhdCI6MTUxODk5NzQzNX0', 'DbJjuh5zhr3cEPBs6mmvqWIAzn2NcBL6-NhtvfAJMTPuKkhrFqCEZt7-BLbDM-MgY4KqTqksyCEU8ZK4KVjL7dyt-hRkS_cCB-lDRBzrm_3u_JQxaOz4jXZNOtQyBlRyoYemEhPpxFgD0UZL_y5JQYGk3tGniTsEJRCaSFsTO6XQkjCmCjLSeT2bSbfaMldNxQw77hbgua-AzCFzY-lzNMUkbEoFSRDK2F3kl0Poz5hoyAinIzOCvtAS4gB0RKixCeW6ImxHTyScq6mpn4eq2GKeHJmW1xDZRiIfNx-25IPJTHZzTFcqLGijMD98fb_RkEFKC8MNVSnFSSL8Y3WjmA']
+2018-02-18 18:43:55,355 MainThread INFO Refreshing access_token
+2018-02-18 18:44:30,767 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:44:30,769 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:44:30,769 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:44:30,855 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%271AkcjiD5PgBxz8YU3CbX3Ee005iDzEglI%27+in+parents&alt=json
+2018-02-18 18:44:30,856 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:44:30,896 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDEwNzAsImlhdCI6MTUxODk5NzQ3MH0', 'U_NjPC0WobzOTkaqp-aHmwlhu0MEjvpR1Vyy9eCrqilJsSCLhoNsuiJCqQNjNIUVNn9487Wz-JdKeiuW3SBbeUUZ4ZjtdG-ILj9jxhio1x2J2Wf1FolPxQ9p97gf9ZoUQahYT1VQ0PXEG0KItQllpLsVXuu0yX0pU1fPBJaRgcJZAm-3IRxWFiPY2o6M_onVG_sN1sxLvmP6DnlEq1L4OxArHff5oGREGKjI9-NMfDx3Zi_MQMJybE13YVAnikr8XaQDj42hFVLB2wt7kbiZATx2RvpPqBTI5gB1UrGeZ9Go9f2uFGIfAtbnQTq07VrGO1CymdMRLHiCB8pTRK_6WQ']
+2018-02-18 18:44:30,896 MainThread INFO Refreshing access_token
+2018-02-18 18:44:31,255 MainThread INFO URL being requested: DELETE https://www.googleapis.com/drive/v3/files/1AkcjiD5PgBxz8YU3CbX3Ee005iDzEglI?
+2018-02-18 18:44:42,623 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:44:42,625 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:44:42,625 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:44:42,746 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%27root%27+in+parents&alt=json
+2018-02-18 18:44:42,746 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:44:42,788 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDEwODIsImlhdCI6MTUxODk5NzQ4Mn0', 'gxXAaN2OP3Vsf_jXH-cZpYl2ffHTP_dKw0gWbrMCeN88zzdnclzB6q_S7a7BCQU6zVOFzekSGQuVOdgwo5s38kfv5chuU8mI8A6PjPVwXSZ5g05__7Z42qQ3JDiXbz-iO6_M6d0EmoY9G99ZFc_65vieObTY8aevBi3OU1gOXlfwcyoNwgnoXTW78Vl5heJQe5XuQsEe9HHuiucL9TbE1fW-aplvNTAg_PsKT6N0grXHOge7gwEO1sNNjg4jz3P-g8009UeUu9Z1IS0S3NJtXKaEhSZtivQvv84xkLUN80KMb3g9XWzH-9evrNCCvEOkaCTHmMrdaQo7LG79BdUUhA']
+2018-02-18 18:44:42,788 MainThread INFO Refreshing access_token
+2018-02-18 18:44:43,108 MainThread INFO URL being requested: DELETE https://www.googleapis.com/drive/v3/files/1AkcjiD5PgBxz8YU3CbX3Ee005iDzEglI?
+2018-02-18 18:44:51,935 MainThread DEBUG GDrive configuration initialized to: {'discovery_uri': 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest', 'scopes': 'https://www.googleapis.com/auth/drive', 'service_account_file': '../config/driveapi/service-account-key.json'}
+2018-02-18 18:44:51,937 MainThread WARNING file_cache is unavailable when using oauth2client >= 4.0.0
+Traceback (most recent call last):
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "build/bdist.linux-x86_64/egg/googleapiclient/discovery_cache/file_cache.py", line 41, in <module>
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0
+2018-02-18 18:44:51,937 MainThread INFO URL being requested: GET https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+2018-02-18 18:44:52,037 MainThread INFO URL being requested: GET https://www.googleapis.com/drive/v3/files?q=%27root%27+in+parents&alt=json
+2018-02-18 18:44:52,038 MainThread INFO Attempting refresh to obtain initial access_token
+2018-02-18 18:44:52,078 MainThread DEBUG ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFlZTYxOGM3NzE2MzkxYzkyMTBlOWUwYzQ4YzNhNDg0ZmMwNDNhMDAifQ', 'eyJpc3MiOiJmdXNlLWdkZnMtbWFzdGVyQHN0YXRlbHktdHVyYmluZS0xOTM4MDMuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MTkwMDEwOTIsImlhdCI6MTUxODk5NzQ5Mn0', 'WxQ27v_6hxHkRbwRUpD_VKsNl-J8a9kCTqWaL4wyIIbwv_0RNDWcniRfW544avEFxcF2ZvcnSlhvBUqkiGAxQ2Uf0WlDUcbaPp5p10cABmeAtlMGUysiTUbi8JzXt0jTj1DKcrWlHGIg3df85Q5AQZlmX_6vwro2lRmex8CHKOc0YMWexR4gPejTqAqaGgK1unBp2qdxnCPxHz_eY93j2Ju-NSp9OqSJ8kteWi9hQt_vLQTWnZ3IBsOOGtJhJsFQegBzbpSiI7NpQUIGYvBFIGZ2HDTZAxiox4oZAi5DIo8G8_6dxCcxvIYGipZG1I4bAk5lK5vPLQIoYcSTsl9jzg']
+2018-02-18 18:44:52,078 MainThread INFO Refreshing access_token

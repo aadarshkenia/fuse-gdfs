@@ -1,7 +1,8 @@
+**/*.pyc
+**/*.log
 .idea
 lib/
 mnt/
 *.sh
 *.tgz
 Makefile.in
-*.log

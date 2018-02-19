@@ -30,7 +30,6 @@ class FileUtils:
         raise RuntimeError('Cannot find child element with name:{} in the list of children: {}', child, children)
 
 if __name__ == '__main__':
-    filename = '/'
-    parent, child = ntpath.split(filename)
-    print('parent: ' + parent)
-    print('child: ' + child)
+    fileUtils = FileUtils('../mnt')
+    parentId = fileUtils.get_folder_id_of_parent('/abc/abc-1')
+    print ("Parent id of /abc: " + parentId)

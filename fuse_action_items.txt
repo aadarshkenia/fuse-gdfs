@@ -1,0 +1,6 @@
+Fuse Action Items:
+1. Rename file/folder.
+2. Add logic for creating folders in mkdir syscall.
+3. Add logic for renaming folder in rename syscall.
+4. ls does not show . and ..
+5.

@@ -8,6 +8,12 @@ python memory.py <mountpoint>
     If using Pycharm, install as follows: File -> Settings -> Project Interpreter.
 
 4. Open another terminal and cd into the mount point directory. You should start seeing logs as you play around in the mound point.
+5. For importing functions of one python file into another, you need to follows the instruction here if the path to both the files is not already added to the interpreter:
 
+https://stackoverflow.com/questions/19885821/how-do-i-import-modules-in-pycharm
 
-
+In PyCharm 4 CE: Go to the 'Project Interpreter'.
+Click the gear to the right of the interpreter's path.
+It will bring up a short drop-down menu, from which you should select "More..".
+On the right hand side of the new pop-up, there will be an icon with the mouse-over text of "Show paths for the selected interpreter".
+Click that button. This new 'Interpreter Paths' pop-up is where you can add paths. @AnkeshAnand –

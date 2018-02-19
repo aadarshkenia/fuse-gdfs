@@ -32,7 +32,7 @@ class FuseDriveClient:
         metadata = {
             'name': foldername,
             'mimeType': 'application/vnd.google-apps.folder', #TODO: Default mime type for folders, maybe move to an enum ?
-            'parents' : [{'id' : parentFolderId}]
+            'parents' : [parentFolderId]
         }
         file = self.drive_client_service.files().create(body=metadata, fields='id').execute()
         fileId =  file.get('id')
@@ -60,7 +60,7 @@ class FuseDriveClient:
         metadata = {
             'name' : fileName,
             'mimeType' : mimeType,
-            'parents' : [{'id' : parentId}]
+            'parents' : [parentId]
         }
         media = MediaIoBaseUpload(file, mimeType)
         file = self.drive_client.files().create(media_body = media, body=metadata)
@@ -88,8 +88,8 @@ if __name__ == '__main__':
     fuseDriveClient = FuseDriveClient('tmpdir')
     file = open("backlog.txt")
     params = {}
-    fuseDriveClient.create_folder('mnt', 'root')
-    files = fuseDriveClient.list_folder_items(folder_id='root', param=params)
+    # fuseDriveClient.create_folder('v1', '1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI') # mnt = 1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI
+    files = fuseDriveClient.list_folder_items(folder_id='1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI', param=params)
     for file1 in files:
         print file1['id'] + ' : ' + file1['name']
-    # fuse.delete_file('1AkcjiD5PgBxz8YU3CbX3Ee005iDzEglI')
+    # fuseDriveClient.delete_file('1Z0ln9BT6tCgPl_7fWqyr30OLMI_Lbzty')

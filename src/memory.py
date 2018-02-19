@@ -8,8 +8,9 @@ from errno import ENOENT
 from stat import S_IFDIR, S_IFLNK, S_IFREG
 from sys import argv, exit
 from time import time
-
 from fuse import FUSE, FuseOSError, Operations, LoggingMixIn
+from driveClient import FuseDriveClient
+from fileUtils import FileUtils
 
 if not hasattr(__builtins__, 'bytes'):
     bytes = str
@@ -17,7 +18,11 @@ if not hasattr(__builtins__, 'bytes'):
 class Memory(LoggingMixIn, Operations):
     'Example memory filesystem. Supports only one level of files.'
 
-    def __init__(self):
+    def __init__(self, mountPoint):
+        print('Constructor called with mount_point: ' + mountPoint)
+        self.mount_point = mountPoint
+        self.drive_client = FuseDriveClient(mountPoint)
+        self.file_utils = FileUtils(mountPoint=mountPoint)
         self.files = {}
         self.data = defaultdict(bytes) # default dict is a custom implementation atop a dictionary. The first argument is a factory specifying the default value for the given key.
         self.fd = 0
@@ -61,12 +66,15 @@ class Memory(LoggingMixIn, Operations):
         return attrs.keys()
 
     def mkdir(self, path, mode):
-        print("mkdir called.")
+        print("mkdir called with path: " + path)
         self.files[path] = dict(st_mode=(S_IFDIR | mode), st_nlink=2,
                                 st_size=0, st_ctime=time(), st_mtime=time(),
                                 st_atime=time())
-
         self.files['/']['st_nlink'] += 1
+        parentId = self.file_utils.get_folder_id_of_parent(path)
+        foldername = self.file_utils.get_file_name(path)
+        self.drive_client.create_folder(foldername, parentId)
+        print ("Folder created successfully.")
 
     def open(self, path, flags):
         self.fd += 1
@@ -135,4 +143,4 @@ if __name__ == '__main__':
         exit(1)
 
     logging.basicConfig(level=logging.DEBUG)
-    fuse = FUSE(Memory(), argv[1], foreground=True)
+    fuse = FUSE(Memory(argv[1]), argv[1], foreground=True)

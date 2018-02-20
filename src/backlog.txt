@@ -1,6 +1,0 @@
-- resumable uploads for larger files vs simple uploads.
-- rate limiting.
-
-
-Questions:
-file blocking vs non blocking mode.

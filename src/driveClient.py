@@ -108,7 +108,7 @@ class FuseDriveClient:
 
 if __name__ == '__main__':
     fuseDriveClient = FuseDriveClient('tmpdir')
-    file = open("backlog.txt")
+    # file = open("backlog.txt")
     params = {}
     # fuseDriveClient.delete_everything()
     # fuseDriveClient.create_folder('v1', '1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI') # mnt = 1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI

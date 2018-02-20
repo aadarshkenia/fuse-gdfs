@@ -4,3 +4,14 @@ Fuse Action Items:
 3. Add logic for renaming folder in rename syscall.
 4. ls does not show . and ..
 5. Refactor config loading and logger initialization so that its not repeated.
+6. resumable uploads for larger files vs simple uploads.
+7. rate limiting.
+
+Next (Time block: One Hour):
+1. mkdir symlinks for . and .. -> check if they are being created.
+2. upload file syscall -> upload call to drive.
+3. rename methods in drive_client.
+4. rename/delete file/folder syscall -> rename/delete on drive.
+
+Questions:
+file blocking vs non blocking mode.

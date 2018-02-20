@@ -22,10 +22,8 @@ class FileUtils:
     def get_folder_id_of_parent(self, filepath):
         root = '/'
         parent, child = ntpath.split(filepath)
-        if(parent == root): #we are at the root level
-            #Get folder id of root elem in mount point.
-            #a. Get folder id of mount point on Google drive.
-            return '1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI' # Temporarily hardcoded. Change this to either return from config or load up during initialization.
+        if (parent == root): #we are at the mount point level.
+            return self.mountPointFolderIdOnDrive
         else:
             folder_id_of_parent = self.get_folder_id_of_parent(parent)
             children = self.drive_client.list_folder_items(folder_id=folder_id_of_parent)
@@ -46,7 +44,8 @@ class FileUtils:
         paths = os.path.normpath(mountPath).strip(os.sep).split(os.sep)
         mountPointFolderId = self.create_folder_path_if_does_not_exist(paths)
         logging.info('Mount Path Folder Id initialized to: %s', mountPointFolderId)
-        
+        return mountPointFolderId
+
     #Given a folder hierarchy, creates this hierarchy on drive if all the paths do not exist. If they exist, returns the folderId of last one (deepest child)
     def create_folder_path_if_does_not_exist(self, paths=[]):
         parentFolderId = 'root'
@@ -79,5 +78,5 @@ class FileUtils:
 
 if __name__ == '__main__':
     fileUtils = FileUtils('../mnt')
-    parentId = fileUtils.get_folder_id_of_parent('/abc/abc-1')
+    parentId = fileUtils.get_folder_id_of_parent('/first-try')
     print ("Parent id of /abc: " + parentId)

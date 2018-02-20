@@ -33,6 +33,7 @@ class FuseDriveClient:
 
     #Creates a new folder and returns its id.
     def create_folder(self, foldername, parentFolderId):
+        logging.info('Received create_folder request with folderName:{} parent:{}'.format(foldername, parentFolderId))
         metadata = {
             'name': foldername,
             'mimeType': 'application/vnd.google-apps.folder', #TODO: Default mime type for folders, maybe move to an enum ?
@@ -83,6 +84,17 @@ class FuseDriveClient:
             itemId = item['id']
             self.delete_file(itemId)
 
+    #Utility function to print the folder tree starting from root and onwards to console.
+    def print_folder_tree(self, parentFolderId):
+        self.print_folder_tree_util(parentFolderId, 0)
+
+    def print_folder_tree_util(self, parentFolderId, indent):
+        allItems = self.list_folder_items(parentFolderId)
+        for item in allItems:
+            print ('{}{}'.format(' ' * indent, item['name']))
+            if(item['mimeType'] == 'application/vnd.google-apps.folder'): #TODO: move to enum
+                self.print_folder_tree_util(item['id'], indent + 2)
+
     def load_configuration(self, filename):
         section = 'SectionOne'
         configDictionary = {}
@@ -100,7 +112,8 @@ if __name__ == '__main__':
     params = {}
     # fuseDriveClient.delete_everything()
     # fuseDriveClient.create_folder('v1', '1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI') # mnt = 1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI
-    files = fuseDriveClient.list_folder_items(folder_id='1gyuC_KvJo5VbU-tDGzUyOfQbbD2TBKwE', param=params)
-    for file1 in files:
-        print file1['id'] + ' : ' + file1['name']
+    # files = fuseDriveClient.list_folder_items(folder_id='1gyuC_KvJo5VbU-tDGzUyOfQbbD2TBKwE', param=params)
+    # for file1 in files:
+    #     print file1['id'] + ' : ' + file1['name']
+    fuseDriveClient.print_folder_tree(rootFolderId)
     # fuseDriveClient.delete_file('1Z0ln9BT6tCgPl_7fWqyr30OLMI_Lbzty')

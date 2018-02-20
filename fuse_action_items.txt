@@ -3,4 +3,4 @@ Fuse Action Items:
 2. Add logic for creating folders in mkdir syscall.
 3. Add logic for renaming folder in rename syscall.
 4. ls does not show . and ..
-5.
+5. Refactor config loading and logger initialization so that its not repeated.

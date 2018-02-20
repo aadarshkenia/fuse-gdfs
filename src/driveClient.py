@@ -17,9 +17,13 @@ class FuseDriveClient:
         try:
             self.mountPoint = mountPoint
             self.myAppConfig = self.load_configuration('../config/driveapi/app.properties')
+
             self.drive_client_service = self.build_drive_client_service()
         except Exception as e:
             logging.error("Error initializing the app. %s %s", e.message, e.__doc__)
+
+
+
 
     def build_drive_client_service(self):
         credentials = ServiceAccountCredentials.from_json_keyfile_name(self.myAppConfig['service_account_file'], self.myAppConfig['scopes'])
@@ -72,6 +76,13 @@ class FuseDriveClient:
     def delete_file(self, fileId):
         file = self.drive_client_service.files().delete(fileId=fileId).execute()
 
+    #Utility function to delete all files in root folder
+    def delete_everything(self):
+        allItems = self.list_folder_items(rootFolderId)
+        for item in allItems:
+            itemId = item['id']
+            self.delete_file(itemId)
+
     def load_configuration(self, filename):
         section = 'SectionOne'
         configDictionary = {}
@@ -83,13 +94,13 @@ class FuseDriveClient:
         logging.debug('GDrive configuration initialized to: %s', configDictionary)
         return configDictionary
 
-
 if __name__ == '__main__':
     fuseDriveClient = FuseDriveClient('tmpdir')
     file = open("backlog.txt")
     params = {}
+    # fuseDriveClient.delete_everything()
     # fuseDriveClient.create_folder('v1', '1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI') # mnt = 1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI
-    files = fuseDriveClient.list_folder_items(folder_id='1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI', param=params)
+    files = fuseDriveClient.list_folder_items(folder_id='1gyuC_KvJo5VbU-tDGzUyOfQbbD2TBKwE', param=params)
     for file1 in files:
         print file1['id'] + ' : ' + file1['name']
     # fuseDriveClient.delete_file('1Z0ln9BT6tCgPl_7fWqyr30OLMI_Lbzty')

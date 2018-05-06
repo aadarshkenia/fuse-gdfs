@@ -3,15 +3,15 @@ import logging
 
 from googleapiclient.discovery import build,HttpRequest
 from googleapiclient.http import MediaIoBaseUpload
+from googleapiclient.http import MediaFileUpload
 from oauth2client.service_account import ServiceAccountCredentials
 
-#Configure logger.
+# Configure logger.
 formatter = logging.Formatter("%(asctime)s %(threadName)s %(levelname)s %(message)s")
 logging.basicConfig(filename='fuse.log', level=logging.DEBUG, format='%(asctime)s %(threadName)s %(levelname)s %(message)s')
 rootFolderId = 'root'
 
 class FuseDriveClient:
-    'A user space file system module that backs up to Google Drive.'
 
     def __init__(self, mountPoint):
         try:
@@ -31,7 +31,7 @@ class FuseDriveClient:
                               requestBuilder=HttpRequest, credentials=credentials, cache_discovery=True, cache=None)
         return drive_service
 
-    #Creates a new folder and returns its id.
+    # Creates a new folder and returns its id.
     def create_folder(self, foldername, parentFolderId):
         logging.info('Received create_folder request with folderName:{} parent:{}'.format(foldername, parentFolderId))
         metadata = {
@@ -45,17 +45,16 @@ class FuseDriveClient:
         return fileId
 
 
-    #Lists all items inside the folder with id=folderId, returns a list of 'files' resource.
+    # Lists all items inside the folder with id=folderId, returns a list of 'files' resource.
     def list_folder_items(self, folder_id, param={}):
         query = '\'' + folder_id +'\'' + ' in parents'
         files = self.drive_client_service.files().list(q=query, **param).execute()
 
         return files['files']
 
-    #Creates a  new file and returns its ID.
-    def upload_file(self, file, fileName, parentId, mimeType):
+    # Creates a  new file and returns its ID.
+    def upload_file(self, file, fileName, title, parentId, mimeType):
         """
-
         :param file: file object for the file to be uploaded
         :param fileName:
         :param parentId: parent folder Id on Drive
@@ -65,26 +64,48 @@ class FuseDriveClient:
         metadata = {
             'name' : fileName,
             'mimeType' : mimeType,
-            'parents' : [parentId]
+            'parents' : [parentId],
+            'title': title
         }
         media = MediaIoBaseUpload(file, mimeType)
-        file = self.drive_client.files().create(media_body = media, body=metadata)
+        file = self.drive_client_service.files().create(media_body=media, body=metadata).execute()
         fileId = file.get('id')
         logging.info('Successfully uploaded file :%s , fileId: %s', fileName, fileId)
         return fileId
 
-    #Deletes a file or folder
+    def get_file_metadata(self, fileId):
+        logging.info('Received GET metadata request for fileId: %s', fileId)
+        metadata = self.drive_client_service.files().get(fileId=fileId).execute()
+        logging.info('Metadata: %s', metadata)
+        return metadata
+
+    # Updates basic metadata for a file like new name(title), description, etc as provided in metadata map.
+    def update_file_metadata(self, fileId, metadata):
+        logging.info('Received update metadata request for fileId: {} map: {}'.format(fileId, metadata))
+        originalMetadata = self.get_file_metadata(fileId)
+        possibleUpdateKeys = ['title', 'description', 'parents']
+        for key in possibleUpdateKeys:
+            if key in metadata:
+                originalMetadata[key] = metadata[key]
+
+        updatedMetadata = self.drive_client_service.files().update(
+            fileId=fileId,
+            body=originalMetadata).execute()
+        logging.info('Updated file metadata: %s', updatedMetadata)
+        return updatedMetadata
+
+    # Deletes a file or folder
     def delete_file(self, fileId):
         file = self.drive_client_service.files().delete(fileId=fileId).execute()
 
-    #Utility function to delete all files in root folder
+    # Utility function to delete all files in root folder
     def delete_everything(self):
         allItems = self.list_folder_items(rootFolderId)
         for item in allItems:
             itemId = item['id']
             self.delete_file(itemId)
 
-    #Utility function to print the folder tree starting from root and onwards to console.
+    # Utility function to print the folder tree starting from root and onwards to console.
     def print_folder_tree(self, parentFolderId):
         self.print_folder_tree_util(parentFolderId, 0)
 
@@ -108,7 +129,13 @@ class FuseDriveClient:
 
 if __name__ == '__main__':
     fuseDriveClient = FuseDriveClient('tmpdir')
-    # file = open("backlog.txt")
+    # file = open("../fuse_action_items.txt")
+    # fileId = fuseDriveClient.upload_file(file, 'f1.txt', 'f1.txt', ['root'], 'application/vnd.google-apps.file')
+    fileId = '1RRqW2sbBuagkuGp3nu_bKV7zohnv4F8XPQJ-2aRPcss'
+    newmetadata = {}
+    newmetadata['title'] = 'f1-renamed.txt'
+    updatedMetadata = fuseDriveClient.update_file_metadata(fileId, newmetadata)
+    fuseDriveClient.get_file_metadata(fileId)
     params = {}
     # fuseDriveClient.delete_everything()
     # fuseDriveClient.create_folder('v1', '1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI') # mnt = 1kT7GDQlHgIHonY1EitlNt39VbV4a3zaI

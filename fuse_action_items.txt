@@ -10,7 +10,7 @@ Fuse Action Items:
 Next (Time block: One Hour):
 1. mkdir symlinks for . and .. -> check if they are being created.
 2. upload file syscall -> upload call to drive.
-3. rename methods in drive_client.
+3. rename methods in drive_client. (To debug this.)
 4. rename/delete file/folder syscall -> rename/delete on drive.
 
 Questions:
